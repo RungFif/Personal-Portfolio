@@ -3,62 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rafif's Portfolio</title>
+    <title>Rafif Pranaja Arliansyah's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Rafif's Portfolio</h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="menu-toggle">Menu</button>
-      </nav>
+      <div class="container">
+        <h1>Rafif Pranaja Arliansyah</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm Rafif, a web developer who loves coding and design.</p>
-    </section>
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p class="about-me">
+          Hello! I'm Rafif, a passionate student from Balikpapan currently
+          studying at IDN Vocational Boarding School in Solo. I'm majoring in
+          software development and are eagerly looking for new projects to
+          finish. Programming has been my hobby since 5th grade, which is the
+          main reason on why i started my development career. I'm looking
+          forward to working with you
+        </p>
+      </section>
 
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>A website built with HTML, CSS, and JavaScript.</p>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>A responsive website with a focus on clean design.</p>
-      </div>
-    </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card" onclick="openModal('project1')">
+            <h3>Personal Portfolio</h3>
+            <p>A website made to display one's skills and achievements.</p>
+            <img src="project1-image.jpg" alt="Personal Portfolio" />
+          </div>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </section>
+          <div class="project-card" onclick="openModal('project2')">
+            <h3>HTML/CSS Guide Book</h3>
+            <p>
+              An easy to read book that will guide the reader to start learning
+              website development.
+            </p>
+            <img src="project2-image.jpg" alt="HTML/CSS Guide Book" />
+          </div>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
+          <div class="project-card" onclick="openModal('project3')">
+            <h3>HTML/CSS Guide Book</h3>
+            <p>
+              An easy to read book that will guide the reader to start learning
+              website development.
+            </p>
+            <img src="project3-image.jpg" alt="HTML/CSS Guide Book" />
+          </div>
+
+          <div class="project-card" onclick="openModal('project4')">
+            <h3>HTML/CSS Guide Book</h3>
+            <p>
+              An easy to read book that will guide the reader to start learning
+              website development.
+            </p>
+            <img src="project4-image.jpg" alt="HTML/CSS Guide Book" />
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-card">HTML & CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">Python</div>
+          <div class="skill-card">Java</div>
+          <div class="skill-card">Capcut</div>
+          <div class="skill-card">Figma</div>
+          <!-- Add more skills as needed -->
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
 
     <footer>
-      <p>&copy; 2024 Rafif Pranaja Arliansyah</p>
+      <p>&copy; 2024 Rafif Pranaja Arliansyah. All rights reserved.</p>
     </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="project1-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('project1')">&times;</span>
+        <h2>Personal Portfolio website</h2>
+        <p>Detailed description of the project goes here...</p>
+        <img src="project1-image.jpg" alt="Personal Portfolio" />
+      </div>
+    </div>
+
+    <div id="project2-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('project2')">&times;</span>
+        <h2>HTML/CSS Guide Book</h2>
+        <p>Detailed description of the project goes here...</p>
+        <img src="project2-image.jpg" alt="HTML/CSS Guide Book" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

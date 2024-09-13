@@ -1,5 +1,20 @@
-// Toggle navigation menu for mobile
-document.getElementById("menu-toggle").addEventListener("click", function () {
-  const nav = document.querySelector("nav ul");
-  nav.classList.toggle("show");
-});
+// Modal functionality
+function openModal(projectId) {
+  document.getElementById(projectId + "-modal").style.display = "block";
+}
+
+function closeModal(projectId) {
+  document.getElementById(projectId + "-modal").style.display = "none";
+}
+
+// Sticky Navbar
+window.onscroll = function () {
+  var header = document.querySelector("header");
+  var sticky = header.offsetTop;
+
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+};
