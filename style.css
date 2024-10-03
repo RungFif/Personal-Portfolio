@@ -87,7 +87,7 @@ h2 {
 .project-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .project-card {
@@ -226,6 +226,16 @@ footer {
   cursor: pointer;
 }
 
+.back-to-top {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.back-to-top:hover {
+  transform: scale(1);
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   header .container {
@@ -257,6 +267,8 @@ footer {
     width: 100%;
   }
 }
+
+
 
 @media screen and (max-width: 480px) {
   header h1 {
