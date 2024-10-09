@@ -72,18 +72,55 @@ section {
   border-bottom: 1px solid #ccc;
 }
 
+.my-logo {
+  width: 150px;
+  height: 150px;
+}
+
+aside {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 0 1 200px;
+}
+
+article {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+aside.my-logo {
+  flex: 0 1 200px;
+  margin-right: 20px;
+}
+
+article {
+  flex: 1;
+  max-width: 70%;
+}
+
 h2 {
-  color: #2d004b; /* Dark Purple */
+  color: #2d004b;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.about-me {
-  text-align: center;
-  font-size: medium;
-}
-
-/* Project Flexbox Layout */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -238,37 +275,15 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  header .container {
-    flex-direction: column;
-  }
-
-  nav ul {
-    flex-direction: column;
+  .about-page {
+    flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: center;
   }
 
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .container {
-    width: 90%;
-  }
-
-  .project-card {
-    flex: 0 1 calc(50% - 20px); /* 2 items per row on tablets */
-  }
-
-  .skill-card {
-    flex: 0 1 calc(50% - 20px); /* 2 items per row */
-  }
-
-  form {
-    width: 100%;
+  aside {
+    margin-bottom: 20px; /* Adds space below the logo when stacked */
   }
 }
-
-
 
 @media screen and (max-width: 480px) {
   header h1 {

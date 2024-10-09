@@ -26,62 +26,71 @@
   </header>
   <main>
     <div class="container">
-      <section id="about">
-        <h2>About Me</h2>
-        <p class="about-me">
-          Hello! I'm Rafif, a passionate student from Balikpapan currently
-          studying at IDN Vocational Boarding School in Solo. I'm majoring in
-          software development and are eagerly looking for new projects to
-          finish. Programming has been my hobby since 5th grade, which is the
-          main reason on why i started my development career. I'm looking
-          forward to working with you
-        </p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <div class="project-card" onclick="openModal('project1')">
-            <h3>Personal Portfolio</h3>
-            <p>A website made to display one's skills and achievements.</p>
-            <img src="Img/portfolio.png" alt="Personal Portfolio" />
-          </div>
-
-          <div class="project-card" onclick="openModal('project2')">
-            <h3>HTML/CSS Guide Book</h3>
-            <p>
-              An easy to read book that will guide the reader to start learning
-              website development.
+      <div class="about-page">
+        <aside>
+          <h3>My profile picture</h3>
+          <img src="Img/logo.jpg" alt="My Logo" class="my-logo">
+        </aside>
+        <section id="about">
+          <article>
+            <h2>About Me</h2>
+            <p class="about-me">
+              Hello! I'm Rafif, a passionate student from Balikpapan currently
+              studying at IDN Vocational Boarding School in Solo. I'm majoring in
+              software development and are eagerly looking for new projects to
+              finish. Programming has been my hobby since 5th grade, which is the
+              main reason on why I started my development career. I'm looking
+              forward to working with you.
             </p>
-            <img src="Img/book.png" alt="HTML/CSS Guide Book" />
-          </div>
-      </section>
+          </article>
+        </section>
+      </div>
+    </div>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill-grid">
-          <div class="skill-card">HTML & CSS</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">Python</div>
-          <div class="skill-card">Java</div>
-          <div class="skill-card">Capcut</div>
-          <div class="skill-card">Figma</div>
-          <!-- Add more skills as needed -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" onclick="openModal('project1')">
+          <h3>Personal Portfolio</h3>
+          <p>A website made to display one's skills and achievements.</p>
+          <img src="Img/portfolio.png" alt="Personal Portfolio" />
         </div>
-      </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
+        <div class="project-card" onclick="openModal('project2')">
+          <h3>HTML/CSS Guide Book</h3>
+          <p>
+            An easy to read book that will guide the reader to start learning
+            website development.
+          </p>
+          <img src="Img/book.png" alt="HTML/CSS Guide Book" />
+        </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">HTML & CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Capcut</div>
+        <div class="skill-card">Figma</div>
+        <!-- Add more skills as needed -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
     </div>
   </main>
 
